@@ -10,17 +10,17 @@ The Amazon Vine program allows manufacturers to pay a fee and provide products t
  - Datasource: Video Game Reviews from <a href="https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt">Amazon Reviews Datasets</a>
 
 ## Overview 
-Amazon_Reviews_ETL.ipynb was written in Google Colab with PySpark. Amazon data was first loaded to a Spark DataFrame, then transformed to match schema set up by pgAdmin, and finally written to the RDS instance on AWS. To view this notebook as an HTML file <a href="">click Here</a>.     
+Amazon_Reviews_ETL.ipynb was written in Google Colab with PySpark. Amazon data was first loaded to a Spark DataFrame, then transformed to match schema set up by pgAdmin, and finally written to the RDS instance on AWS. This notebook is also available as an HTML file.     
     
-Vine_Review_Analysis.ipynb was also written in Google Colab with PySpark. After data was retrieved from the SQL Database and converted to a spark dataframe, it was transformed to keep relevant columns, filtered, and analyzed to calculate the percentage of vine vs non-vine reviews. To view this notebook as an HTML file <a href="">click Here</a>. 
+Vine_Review_Analysis.ipynb was also written in Google Colab with PySpark. After data was retrieved from the SQL Database and converted to a spark dataframe, it was transformed to keep relevant columns, filtered, and analyzed to calculate the percentage of vine vs non-vine reviews. This notebook is also available as an HTML file.
 
 
 ### A look at the paid reviews
-![](./Images/piad_reviews_table.png) 
+![](./Images/paid_reviews_table.png) 
   
   
 ### A look at the unpaid reviews
-![](./Images/unpiad_reviews_table.png)
+![](./Images/unpaid_reviews_table.png)
    
 ## Results: Paid vs Unpaid
 
@@ -32,7 +32,7 @@ Vine_Review_Analysis.ipynb was also written in Google Colab with PySpark. After 
 
  - 1785997 reviews in total
      - 1026924 of those reviews are 5 stars: 99.84% are unpaid,  0.16% are paid
-     - 69k+ reviews were voted helpful, heavily favoring the unpaid reviews (99%+)
+     - 69k+ reviews were voted helpful, heavily favoring the unpaid reviews (99.9%)
 
 
 ### There is no clear bias towards paid reviews.

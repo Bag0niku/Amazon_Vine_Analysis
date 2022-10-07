@@ -16,11 +16,11 @@ Vine_Review_Analysis.ipynb was also written in Google Colab with PySpark. After 
 
 
 ### A look at the paid reviews
-![]() 
+![](./Images/piad_reviews_table.png) 
   
   
 ### A look at the unpaid reviews
-![]()  
+![](./Images/unpiad_reviews_table.png)
    
 ## Results: Paid vs Unpaid
 

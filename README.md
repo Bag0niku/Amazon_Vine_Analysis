@@ -25,14 +25,13 @@ Vine_Review_Analysis.ipynb was also written in Google Colab with PySpark. After 
 ## Results: Paid vs Unpaid
 
 - There are significantly more reviews by non-vine members than reviews by vine members.  
+ - 1785997 reviews in total
+     - 1026924 of those reviews are 5 stars: 99.84% are unpaid,  0.16% are paid
+     - 69k+ reviews were voted helpful, heavily favoring the unpaid reviews (99.9%)
+     - A total of 20487 5 star reviews: 20439 unpaid (99.77%), 48 paid (0.23%)
 - Of the 14319 products in the dataset
     - 14249 products have no paid reviews
     - 19 products have only paid reviews
     - 51 products have reviews from both categories.
-
- - 1785997 reviews in total
-     - 1026924 of those reviews are 5 stars: 99.84% are unpaid,  0.16% are paid
-     - 69k+ reviews were voted helpful, heavily favoring the unpaid reviews (99.9%)
-
 
 ### There is no clear bias towards paid reviews.
